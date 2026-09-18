@@ -351,8 +351,16 @@ Para dar respuesta integral a los requerimientos de gestión de la empresa, el E
   - `ProductSeeder.php`, `CategorySeeder.php`, `ServiceSeeder.php`.
 
 ## Verificación de Entregables Visuales
-Las capturas de pantalla de evidencia se encuentran archivadas en la carpeta `docs/parcial/capturas/`:
-1. `01_tablas_mysql.png`: Consulta `SHOW TABLES;` y `DESCRIBE clients;` en la base de datos MySQL.
-2. `02_codigo_migraciones.png`: Evidencia del código fuente de las migraciones de `clients`, `pets` y `products`.
-3. `03_codigo_modelos.png`: Evidencia del código fuente de los modelos `Client`, `Pet` y `Product` con sus relaciones.
-4. `04_seeder_ejecutado.png`: Ejecución exitosa de `php artisan db:seed` y consulta de los registros insertados en MySQL/Tinker.
+Las capturas de pantalla de evidencia se encuentran archivadas en la carpeta `docs/parcial/capturas/` y se presentan a continuación:
+
+### 1. Tablas en MySQL (`SHOW TABLES;`, `DESCRIBE clients;`, `DESCRIBE pets;`)
+![Tablas en MySQL](capturas/01_tablas_mysql.png)
+
+### 2. Código Fuente de las Migraciones (`clients`, `pets`, `products`)
+![Código de Migraciones](capturas/02_codigo_migraciones.png)
+
+### 3. Código Fuente de los Modelos Eloquent y Relaciones (`Client`, `Pet`, `Product`)
+![Código de Modelos](capturas/03_codigo_modelos.png)
+
+### 4. Seeder Ejecutado y Registros Insertados (`ClientSeeder`, `pets`, Tinker)
+![Seeder Ejecutado](capturas/04_seeder_ejecutado.png)
