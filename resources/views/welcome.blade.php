@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Distribuidora Tecnológica - ERP</title>
+        <title>Veterinaria Huellitas - ERP</title>
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600,700,800&display=swap" rel="stylesheet" />
@@ -23,8 +23,8 @@
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="flex justify-between h-20 items-center">
                         <div class="flex items-center gap-3">
-                            <img src="{{ asset('img/logo.png') }}" alt="Logo" class="h-12 w-auto shadow-sm rounded-lg">
-                            <span class="font-extrabold text-2xl text-blue-900 tracking-tight">Distribuidora Tecnológica</span>
+                            <span class="text-3xl">🐾</span>
+                            <span class="font-extrabold text-2xl text-blue-900 tracking-tight">Veterinaria Huellitas</span>
                         </div>
                         <div class="flex items-center gap-4">
                             @if (Route::has('login'))
@@ -46,10 +46,10 @@
             <main class="relative z-10 flex-grow flex items-center justify-center pt-10 pb-20">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight mb-6">
-                        Gestión Inteligente para tu <span class="text-blue-600">Negocio</span>
+                        Gestión Inteligente para tu <span class="text-blue-600">Clínica Veterinaria</span>
                     </h1>
                     <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto mb-10">
-                        El sistema ERP diseñado para optimizar el control de productos, clientes, compras y ventas de tu distribuidora. Todo en un solo lugar.
+                        El sistema ERP diseñado para optimizar el control de pacientes, dueños, citas médicas, farmacia e inventario de Veterinaria Huellitas.
                     </p>
                     
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
