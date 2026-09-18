@@ -205,9 +205,10 @@ $cliente->pets;
 
 ### 5. Levantar el servidor web de Laravel
 ```bash
-php artisan serve
+php artisan serve --port=8001
 ```
-Disponible en el navegador: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+- **URL en el navegador:** [http://127.0.0.1:8001](http://127.0.0.1:8001) *(o http://localhost:8001)*  
+*(Se utiliza el puerto `8001` ya que el `8000` está ocupado por otro servicio del sistema).*
 
 ### 6. Administrador de Base de Datos Web (phpMyAdmin)
 - URL: [http://localhost:8081](http://localhost:8081)
