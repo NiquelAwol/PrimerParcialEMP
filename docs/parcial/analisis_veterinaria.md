@@ -67,6 +67,8 @@ El sistema está diseñado en torno a 9 entidades relacionales principales que s
 
 ## Diagrama Entidad-Relación (ER)
 
+![Diagrama Entidad-Relación](capturas/diagrama_er.png)
+
 ```mermaid
 erDiagram
     CLIENTS ||--o{ PETS : "posee (1:N)"

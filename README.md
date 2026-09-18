@@ -19,7 +19,30 @@ A continuación, se presentan las **evidencias y capturas de pantalla solicitada
 
 ---
 
-## 📸 Entregables Visuales y Explicación Técnica
+## 📊 Diagrama Entidad-Relación (ER) del Sistema ERP
+
+![Diagrama Entidad-Relación](capturas/diagrama_er.png)
+
+#### 📝 Explicación del Modelo Entidad-Relación:
+El diagrama modela la arquitectura de datos completa del ERP para la **Veterinaria Huellitas**, estructurado en torno a 9 entidades que garantizan la integridad referencial y cubren el ciclo operativo clínico y comercial:
+
+1. **`clients` (Dueños de Mascotas):** Representa a las personas naturales responsables de los pacientes y titulares de la facturación. Posee clave primaria `id`, documento único (`document_id`), teléfono, correo único (`email`) y estado.
+2. **`pets` (Pacientes / Mascotas):** Registra a los pacientes atendidos en la clínica. Se relaciona de forma jerárquica con `clients` mediante la clave foránea `client_id` (`1:N`, un cliente puede tener múltiples mascotas, pero cada mascota pertenece a un único dueño).
+3. **`categories` (Categorías de Productos):** Agrupa los insumos y artículos de la veterinaria (Medicamentos, Alimentos, Accesorios, Juguetes, Higiene). Se relaciona `1:N` con `products`.
+4. **`products` (Medicamentos, Alimentos e Insumos):** Catálogo de existencias de farmacia y mostrador con clave foránea `category_id`, código SKU único, precios de compra y venta, existencias actuales y umbral de stock mínimo para alertas.
+5. **`services` (Servicios Veterinarios y Estéticos):** Catálogo de procedimientos médicos y de bienestar (consultas, vacunaciones, cirugías, odontología, peluquería) con duración estimada y tarifas fijadas.
+6. **`employees` (Personal de la Veterinaria):** Médicos veterinarios, cirujanos, auxiliares clínicos, recepcionistas y estilistas con número de tarjeta profesional y rol.
+7. **`appointments` (Citas y Agendamiento Clínico):** Núcleo de la gestión operativa. Interconecta cuatro entidades:
+   - `client_id` (FK a `clients`): Cliente que solicita la cita.
+   - `pet_id` (FK a `pets`): Mascota que recibirá la atención médica.
+   - `service_id` (FK a `services`): Procedimiento clínico o estético a ejecutar.
+   - `employee_id` (FK a `employees`): Profesional veterinario asignado.
+8. **`sales` (Facturación / Ventas):** Registra el encabezado del comprobante fiscal, vinculando al cliente (`client_id`), total facturado, método de pago y estado de la transacción.
+9. **`sale_items` (Detalle de Venta):** Líneas de la factura que relacionan la venta (`sale_id`) con los productos adquiridos (`product_id`), especificando cantidad, precio unitario aplicado y subtotal.
+
+---
+
+## 📸 Entregables Visuales de Implementación y Explicación Técnica
 
 ---
 
